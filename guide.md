@@ -34,28 +34,25 @@ The events of these scenes are nonsensical, but let's see about translating them
 
 To start off we will download R\*n'Py from the official site at [https://www.renpy.org/latest.html](https://www.renpy.org/latest.html) and install it.
 
-Afterwhich starting where we would start with any other R\*n'Py project we create a project through the launcher. (*Create New Project* in The R\*n'Py Launcher). The Launcher will create for you a directory named after the name you chose for you project in the Projects Directory of your choosing (check where this is from the Launcher preferences). The directory has the following structure:
+Afterwhich starting where we would start with any other R\*n'Py project we create a project through the launcher. (*Create New Project* in The R\*n'Py Launcher). The Launcher will create for you a directory named after the name you chose for you project in the Projects Directory of your choosing (check where this is from the Launcher preferences). The directory has the following file structure inside a folder named what you named your project:
 
-+ <name you set for your project>
-  + game
-    + audio
-    + cache
-    + gui
-    + images
-    + saves
-    + tl
-    + gui.rpy
-    + gui.rpyc
-    + options.rpy
-    + options.rpyc
-    + screens.rpy
-    + script.rpy
-    + script.rpyc
-  + log.txt
-
++ game
+  + audio
+  + cache
+  + gui
+  + images
+  + saves
+  + tl
+  + gui.rpy
+  + gui.rpyc
+  + options.rpy
+  + options.rpyc
+  + screens.rpy
+  + script.rpy
+  + script.rpyc
++ log.txt
  
-  
- Of these, we are interested in the file `script.rpy`, this is where the engine will start looking for dialogue and scenes to display, so it's where we'll start writing ours.
+Out of these, we are interested in the file `script.rpy`, this is where the engine will start looking for dialogue and scenes to display, so it's where we'll start writing ours.
  
  Now we also happen to have ready some textures for our 4 characters and 2 backgrounds. Unpack the `assets` folder the theme zip you downloaded before into the `game` folder, such that is in the same directory and at the same level of depth as the `script.rpy` file. After you've done this the game directory will include the a folder called `assets` with subfolders for `characters` and `backgrounds`. After this is done R\*n'Py will be able to find our textures when we reference them in our script in `script.rpy`. The `script.rpy` file comes with some contents already but for our purposes these should be erased at the start.
 
