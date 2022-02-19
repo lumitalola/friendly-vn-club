@@ -38,7 +38,7 @@ R\*n'py is genuinely very easy to use after like 1 hour of practice. Please refe
 ### What comes after submission
 
 ## Schedule
-| Round | Start | Deadline| 
+| Round | Start | Deadline | 
 | --- | --- | --- |
 | Trial | TBD | TBD |
 
