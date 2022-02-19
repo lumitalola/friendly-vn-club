@@ -16,7 +16,7 @@ The idea is that I will provide different *themes* from which every member will 
 ## Participation
 
 ### Sign-up
-You can sign up by contacting . I recommend trying out what development with R\*npy would be like (see section *Working with R\*n'py* in this document) before signing up.  I also ask that you only sign up if you think you have the time required to dedicate to the rounds, though there will be no penalty for not completing a round or quitting in the middle and you'll be allowed to sign up for future rounds.
+You can sign up by contacting me via e-mail (see section [contact](#contact) in this document) or any other venue you know. I recommend trying out what development with R\*npy would be like (see section *Working with R\*n'py* in this document) before signing up.  I also ask that you only sign up if you think you have the time required to dedicate to the rounds, though there will be no penalty for not completing a round or quitting in the middle and you won't be blacklisted or anything dw.
 
 ### Getting the assets
 Each theme will include 4 characters with 12 textures each.
@@ -38,9 +38,16 @@ R\*n'py is genuinely very easy to use after like 1 hour of practice. Please refe
 ### What comes after submission
 
 ## Schedule
+
 | Round | Start | Deadline | 
 | --- | --- | --- |
 | Trial | TBD | TBD |
+
+## Contact
+
+My e-mail is ...
+
+---
 
 Thank you for reading this document! <3
 
