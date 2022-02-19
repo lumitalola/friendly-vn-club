@@ -31,7 +31,7 @@ These assets can be fetched as zip files through the links above or manually nav
 Each theme is brought into your project by placing the XXXXX folder in your project's XXXXX folder.
 
 ### Working with R\*n'py
-R\*n'py is genuinely very easy to use after like 1 hour of practice. Please refer to the guide I wrote for this purpose at [lumitalola.github.io/guide](guide.md). A sample project that uses assets from one of the themes can be found at (link). Reading throught it and running it should give you a good idea of how to get started making your own VNs! R\*n'py allows for more complex and branched narratives that feature player choise as well as linear ones. For learning about these refer to the official R\*n'py documentation at [https://www.renpy.org/doc/html/](https://www.renpy.org/doc/html/).
+R\*n'py is genuinely very easy to use after like 1 hour of practice. Please refer to the guide I wrote for this purpose at [lumitalola.github.io/friendly-vn-club/guide.html](guide.md). A sample project that uses assets from one of the themes can be found at (link). Reading throught it and running it should give you a good idea of how to get started making your own VNs! R\*n'py allows for more complex and branched narratives that feature player choise as well as linear ones. For learning about these refer to the official R\*n'py documentation at [https://www.renpy.org/doc/html/](https://www.renpy.org/doc/html/).
 
 ### Asking for help
 
