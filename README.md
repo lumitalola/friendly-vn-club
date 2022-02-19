@@ -5,6 +5,7 @@ Abstract: In this document I outline the idea and practical implementation of th
 ---
 
 Table of contents:
+* TOC
 {:toc}
 
 ---
