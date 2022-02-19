@@ -1,6 +1,6 @@
 # Friendly VN Club
 
-Abstract: In this document I outline the idea and practical implementation of the Friendly VN Club Contest where members of the club will create VNs of similar length and scale in the same allotted time using R\*n'py (A simple to use VN engine) and the same assets (created by me or anyone elso who wants to contribute). The aim is to have fun together! This is intented as a trial run sort of deal; there's no telling if this will be fun or even if anyone will actually do it so if it sucks I'll take responsibility and call the whole thing off after or during the trial round. For me I imagine this as a way to try out/develop/get rid of some fun ideas that don't fit anywhere else right now.
+Abstract: In this document I outline the idea and practical implementation of the Friendly VN Club Contest where members of the club will create VNs of similar length and scale in the same allotted time using R\*n'py (A simple to use VN engine) and the same assets (created by me or anyone elso who wants to contribute). The aim is to have fun together! This is intented as a trial run sort of deal; there's no telling if this will be fun or even if anyone will actually do it so if it sucks I'll take responsibility and call the whole thing off after or during the trial round. For me I imagine this as a way to try out/develop/expel some fun ideas for narratives that don't really fit anywhere else right now.
 
 ---
 
