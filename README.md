@@ -16,7 +16,7 @@ Table of contents:
 ## Participation
 
 ### Sign-up
-You can sign up by contacting . I recommend trying out what development with R\*npy would be like (see section [Development](#development) in this document) before signing up.  I also ask that you only sign up if you think you have the time required to dedicate to the rounds, though there will be no penalty for not completing a round or quitting in the middle and you'll be allowed to sign up for future rounds.
+You can sign up by contacting . I recommend trying out what development with R\*npy would be like (see section *Working with R\*n'py* in this document) before signing up.  I also ask that you only sign up if you think you have the time required to dedicate to the rounds, though there will be no penalty for not completing a round or quitting in the middle and you'll be allowed to sign up for future rounds.
 
 ### Getting the assets
 Each theme will include 4 characters with 12 textures each.
@@ -28,7 +28,7 @@ This (trial)round's themes are:
 
 These assets can be fetched as zip files through the links above or manually navigated to on this project's github page at [github.com/lumitalola/friendly-vn-club](github.com/lumitalola/friendly-vn-club).
 
-### Development
+### Working with R\*n'py
 R\*n'py is genuinely very easy to use after like 1 hour of practice. Please refer to the guide I wrote for this purpose at [lumitalola.github.io/guide](guide.md)
 
 ### Asking for help
