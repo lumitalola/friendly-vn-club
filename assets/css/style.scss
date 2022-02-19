@@ -2,6 +2,7 @@
 ---
 
 @import "{{ site.theme }}";
-h1 {
-  color: #000000
+body {
+  font: 100% $font-stack;
+  color: black;
 }
