@@ -51,4 +51,4 @@ My e-mail is ...
 
 Thank you for reading this document! <3
 
-[^word_count]: 5 pages of A4 dialogue should be about 2,500 words. So if you put your script file into a word counter (e.g. (https://wordcounter.net/)[https://wordcounter.net/]) and get around 5,000 words then you know you're just about at the limit
+[^word_count]: 5 pages of A4 dialogue should be about 2,500 words. So if you put your script file into a word counter (e.g. [https://wordcounter.net/](https://wordcounter.net/)) and get around 5,000 words then you know you're just about at the limit
