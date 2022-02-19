@@ -13,10 +13,14 @@ Table of contents:
 ## Participation
 ### Sign-up
 ### Getting the assets
+Each theme will include 4 characters with 12 textures each.
+
 This (trial)round's themes are:
-+ Family
-+ Dog World
-+ Angel Academy
++ Family (download)
++ Dog World (download)
++ Angel Academy (download)
+
+These assets can be fetched as zip files through the links above or manually navigated to on this project's github page at [github.com/lumitalola/friendly-vn-club](github.com/lumitalola/friendly-vn-club).
 
 ### Working with R\*n'py
 R\*n'py is genuinely very easy to use after like 1 hour of practice. Please refer to the guide I wrote for this purpose at [lumitalola.github.io/guide](guide.md)
