@@ -36,20 +36,22 @@ To start off we will download R\*n'Py from the official site at [https://www.ren
 
 Afterwhich starting where we would start with any other R\*n'Py project we create a project through the launcher. (*Create New Project* in The R\*n'Py Launcher). The Launcher will create for you a directory named after the name you chose for you project in the Projects Directory of your choosing (check where this is from the Launcher preferences). The directory has the following structure:
 
-+ game
-  + audio
-  + cache
-  + gui
-  + images
-  + saves
-  + tl
-  + gui.rpy
-  + gui.rpyc
-  + options.rpy
-  + options.rpyc
-  + screens.rpy
-  + script.rpy
-  + script.rpyc
++ <name you set for your project>
+  + log.txt
+  + game
+    + audio
+    + cache
+    + gui
+    + images
+    + saves
+    + tl
+    + gui.rpy
+    + gui.rpyc
+    + options.rpy
+    + options.rpyc
+    + screens.rpy
+    + script.rpy
+    + script.rpyc
  
  Of these, we are interested in the file `script.rpy`, this is where the engine will start looking for dialogue and scenes to display, so it's where we'll start writing ours.
  
