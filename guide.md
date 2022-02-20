@@ -120,7 +120,7 @@ label Scene1:
 ```
 the scene command sets as the background image our image file `bg streetlight.png` which we imported from the zip. Similarly the show command knows to look for a file called `smidley neutral.png` and positions it at the left of the screen as per our request. Other image files that start with `smidley` R\*n'Py knows to associate with our character of the same name as well and this can be used in various ways that we won't get into here. The `hide` command gets rid of the characters we've asked to be shown before.
 
-Next we will write scene 2 similarly with the addition of a switch in emotion for Lindol during the dialogue. Doing this results in the following script for our VN-ified script (NOTE: the return at the end of scene 2, this tells the engine that our VN is over.):
+Next we will write scene 2 similarly with the addition of a switch in emotion for Lindol during the dialogue. We'll name scene 2 `Father_and_Son` in code to demonstrate that the labels can be whatever you like as long as they don't include spaces or other forbidden characters. Doing this results in the following script for our VN-ified script (NOTE: the return at the end of scene 2, this tells the engine that our VN is over.):
 ```
 define S = Character('Smidley', color="#000080")
 define G = Character('Grimson', color="#990000")
@@ -148,9 +148,9 @@ label Scene1:
   hide grimson
   "SMIDLEY and GRIMSON begin to throw rocks in a bog in order to hopefully fill it up and turn it into a walkable road, this will never work."
   
-  jump Scene2
+  jump Father_and_Son
    
-label Scene2:
+label Father_and_Son:
   
   scene bg study
   
@@ -165,7 +165,10 @@ label Scene2:
   
   "LINDOL hands his son a Peloppian Shortsword."
   
-  show son thankful at left
+  show son thankful at right
+  pause # The pause command tells R*n'Py to move on from an image only after the reader clicks.
+  # By the way everything in a line followed by a # is a comment. The purpose of these is to write notes on your script that don't end up
+  # being shown to the reader but are there to help you keep track of things!
   
   return
 ```
@@ -176,9 +179,120 @@ Now running our script results in a little VN segment that seems to be quite fai
 
 Here we will go over two crucial tools for creating branching narratives that the player can impact: variables (also called flags) and menus.
 
-Before going into implementation details let's create a necessity for non-linearity in our narrative. Let's decide that scene 2 is followed by a third scene where it's revealed that the son in scene 2
-Variables/flags are simply values that we can set
+Before going into implementation details let's create a necessity for non-linearity in our narrative. Let's decide that scene 2 is followed by a third scene where it's revealed that the son in scene 2 is actually Grimson from the past via him mentioning receiving an object from his father as a child, and in scene 2 the player/reader gets to choose which object young Grimson's father gifts him. Then the choice the player/reader makes in scene 2 will interactively effect what happens in scene 3!
 
+Variables/flags are simply values that we can set at a part in our label and then reference at a later point in that label or in a later label. If we wanted to define a flag birthday to hold the value "January 13th" we would write `$ birthday = "January 13th"` if we were inside of a lable, or `define birthday = "January 13th"` if we were outside of one. Then, referencing that flag later dialogue we could write a narrator line `"Erika's birthday is on [birthday]"`. If we wanted to only display a line of dialogue for a given birthday value we would write the following inside a label (here the flag `lisa_birthday` has been set to some value in the same manner that `birthday` was):
+```
+  if birthday == lisa_birthday :
+    "Erika and Lisa share birthdays!"
+```
+Variables can also contain more complex data (refer to the official documentation for further help) however for our purposes this will suffice.
+
+Next, moving onto menus, they're a list of options that pops up that the reader can click on and depending on which option they click on we can make decisions about how that affects the story. If we wanted to let the reader pick the color shirt a character is wearing we could write (the name of the label that follows the menu is arbitrary):
+```
+menu:
+  "I wonder what color shirt Lisa will wear today?"
+
+  "Blue":
+    $ color = "blue"
+  "Red":
+    $ color = "red"
+  
+label after_menu:
+  "Lisa picked the [color] shirt!"
+---
+Menu options can also result in us jumping to another scene as follows:
+```
+menu:
+  "I wonder what color shirt Lisa will wear today?"
+  
+  "Blue":
+    jump blue_shirt_scene
+    
+  "Red":
+    jump red_shirt_scene
+    
+label red_shirt_scene:
+  "This scene is only played if the reader picked the red shirt!"
+  jump after_shirt
+  
+label blue_shirt_scene:
+  "This scene is only played if the reader picked the blue shirt!"
+  jump after_shirt
+  
+label after_shirt:
+  "Wow! What shirt-selection fun!"
+```
+
+OK! Now that we knwo what menus and flags/variables are we are ready to non-linearize our game! Putting these concepts to work in our game we will arrive at the following script:
+```
+define S = Character('Smidley', color="#000080")
+define G = Character('Grimson', color="#990000")
+define L = Character('Lindol',  color="#50C878")
+define son = Character('Son', color="#FFFF00")
+
+label start:
+  jump Scene1
+
+label Scene1:
+
+  scene bg streetlight
+  
+  "Smidley and Grimson meet under a streetlight"
+  
+  show smidley neutral at left
+  S "Ah, good. You've arrived."
+  
+  show grimson sheepish at right
+  G "Of course, of course I've arrived. Don't I always arrive? If we've agreed on it--I arrive."
+  
+  S "Well, sure, whatever, anyway--let's get started then."
+  
+  hide smidley
+  hide grimson
+  "SMIDLEY and GRIMSON begin to throw rocks in a bog in order to hopefully fill it up and turn it into a walkable road, this will never work."
+  
+  jump Father_and_Son
+   
+label Father_and_Son:
+  
+  scene bg study
+  
+  show lindol pensive at left 
+  L "Listen, come here, listen to me now."
+  
+  show son receptive at right
+  son "What is it, papa?"
+  
+  show lindol forlorn at left
+  L "One day I'll lose you, ok, and you'll lose me. ... . I guess. I want to give you something... something to help you make it out there without me."
+  
+menu:
+  "What item does Lindol give his son?"
+  
+  "A Peloppian Shortsword":
+    $ item = "Peloppian Shortsword"
+  
+  "A Koumblai Spear":
+    $ item = "Koumblai spear"
+
+label Father_and_Son_aftermenu:
+  "LINDOL hands his son a [item]."
+  
+  show son thankful at right
+  pause
+  
+  jump scene_3
+  
+label scene_3:
+  scene bg streetlight
+  
+  show grimson conniving
+  G "It's a good thing I brought my [item] my father gifted me when I was a small child..."
+  
+  return
+```
+Run this with R\*n'Py to see if it works and feel free to experiment with using the menus with `jump` commands to de-linearize further! The R\*n'Py official documentation contains further info about these concepts and more, I highly recommend giving it a look!
 
 ---
 
