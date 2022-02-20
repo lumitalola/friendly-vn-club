@@ -182,13 +182,16 @@ Here we will go over two crucial tools for creating branching narratives that th
 Before going into implementation details let's create a necessity for non-linearity in our narrative. Let's decide that scene 2 is followed by a third scene where it's revealed that the son in scene 2 is actually Grimson from the past via him mentioning receiving an object from his father as a child, and in scene 2 the player/reader gets to choose which object young Grimson's father gifts him. Then the choice the player/reader makes in scene 2 will interactively effect what happens in scene 3!
 
 Variables/flags are simply values that we can set at a part in our label and then reference at a later point in that label or in a later label. If we wanted to define a flag birthday to hold the value "January 13th" we would write `$ birthday = "January 13th"` if we were inside of a lable, or `define birthday = "January 13th"` if we were outside of one. Then, referencing that flag later dialogue we could write a narrator line `"Erika's birthday is on [birthday]"`. If we wanted to only display a line of dialogue for a given birthday value we would write the following inside a label (here the flag `lisa_birthday` has been set to some value in the same manner that `birthday` was):
+
 ```
   if birthday == lisa_birthday :
     "Erika and Lisa share birthdays!"
 ```
+
 Variables can also contain more complex data (refer to the official documentation for further help) however for our purposes this will suffice.
 
 Next, moving onto menus, they're a list of options that pops up that the reader can click on and depending on which option they click on we can make decisions about how that affects the story. If we wanted to let the reader pick the color shirt a character is wearing we could write (the name of the label that follows the menu is arbitrary):
+
 ```
 menu:
   "I wonder what color shirt Lisa will wear today?"
@@ -200,8 +203,10 @@ menu:
   
 label after_menu:
   "Lisa picked the [color] shirt!"
----
+```
+
 Menu options can also result in us jumping to another scene as follows:
+
 ```
 menu:
   "I wonder what color shirt Lisa will wear today?"
