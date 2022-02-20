@@ -41,9 +41,9 @@ R\*n'py is genuinely very easy to use after like 1 hour of practice. Please refe
 
 ## Schedule
 
-| Round | Start | Deadline | 
+| Event | Start | Deadline | 
 | --- | --- | --- |
-| Trial | TBD | TBD |
+| Trial round | TBD | TBD |
 
 ## Contact
 
