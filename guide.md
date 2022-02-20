@@ -225,6 +225,7 @@ label after_shirt:
 ```
 
 OK! Now that we knwo what menus and flags/variables are we are ready to non-linearize our game! Putting these concepts to work in our game we will arrive at the following script:
+
 ```
 define S = Character('Smidley', color="#000080")
 define G = Character('Grimson', color="#990000")
@@ -292,6 +293,7 @@ label scene_3:
   
   return
 ```
+
 Run this with R\*n'Py to see if it works and feel free to experiment with using the menus with `jump` commands to de-linearize further! The R\*n'Py official documentation contains further info about these concepts and more, I highly recommend giving it a look!
 
 ---
