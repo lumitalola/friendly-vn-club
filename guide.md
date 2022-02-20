@@ -1,6 +1,6 @@
 # R\*n'py guide for getting started
 
-Abstract: In this guide I will present to you a use case for R\*n'py where you start off with a dialogue script in the format that one might write one if asked on the street to write some dialogue and end up with a short VN implemented in R\*n'py. You can follow along by downloading the assets for the trial round theme Guide here LINK. Following along will hopefully demonstrate to you how to write simple linear scenes in R\*n'py, a skill you can easily expand upon without having to learn much more.
+Abstract: In this guide I will present to you a use case for R\*n'py where you start off with a dialogue script in the format that one might write one if asked on the street to write some dialogue and end up with a short VN implemented in R\*n'py. You can follow along by downloading the assets for this guide here LINK. Following along will hopefully demonstrate to you how to write simple linear scenes in R\*n'py as well as non-linear, branching narratives. These are skills you can easily expand upon to create complex and impressive narratives!
 
 ## Starting point
 
@@ -170,7 +170,15 @@ label Scene2:
   return
 ```
 
-Now running our script results in a little VN segment that seems to be quite faithful to our original script!
+Now running our script results in a little VN segment that seems to be quite faithful to our original script! If you only wish to create linear stories that have no player input, these are all the skills you need! However for more complex narratives with player input we must go beyond linearity.
+
+## Beyond linearity
+
+Here we will go over two crucial tools for creating branching narratives that the player can impact: variables (also called flags) and menus.
+
+Before going into implementation details let's create a necessity for non-linearity in our narrative. Let's decide that scene 2 is followed by a third scene where it's revealed that the son in scene 2
+Variables/flags are simply values that we can set
+
 
 ---
 
