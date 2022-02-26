@@ -1,6 +1,6 @@
 # R\*n'py guide for getting started
 
-Abstract: In this guide I will present to you a use case for R\*n'py where you start off with a dialogue script in the format that one might write one if asked on the street to write some dialogue and end up with a short VN implemented in R\*n'py. You can follow along by downloading the assets for this guide here LINK. Following along will hopefully demonstrate to you how to write simple linear scenes in R\*n'py as well as non-linear, branching narratives. These are skills you can easily expand upon to create complex and impressive narratives!
+Abstract: In this guide I will present to you a use case for R\*n'py where you start off with a dialogue script in the format that one might write one if asked on the street to write some dialogue and end up with a short VN implemented in R\*n'py. You can follow along by downloading the assets for this guide here LINK and pasting (with overwrite) the contents of the zip into a new project folder created from the R\*n'Py client. Following along will hopefully demonstrate to you how to write simple linear scenes in R\*n'py as well as non-linear, branching narratives. These are skills you can easily expand upon to create complex and impressive narratives!
 
 ## Starting point
 
