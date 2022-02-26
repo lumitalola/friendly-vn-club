@@ -54,7 +54,7 @@ Afterwhich starting where we would start with any other R\*n'Py project we creat
  
 Out of these, we are interested in the file `script.rpy`, this is where the engine will start looking for dialogue and scenes to display, so it's where we'll start writing ours.
  
- Now we also happen to have ready some textures for our 4 characters and 2 backgrounds. Unpack the `assets` folder the theme zip you downloaded before into the `game` folder, such that is in the same directory and at the same level of depth as the `script.rpy` file. After you've done this the game directory will include the a folder called `assets` with subfolders for `characters` and `backgrounds`. After this is done R\*n'Py will be able to find our textures when we reference them in our script in `script.rpy`. The `script.rpy` file comes with some contents already but for our purposes these should be erased at the start.
+ Now we also happen to have ready some textures for our 4 characters and 2 backgrounds. Unpack the zip folder you downloaded before into the `game` folder, such that the `script.rpy` folder overwrites the existing `script.rpy` folder. After you've done this the game directory will include the a folder called `images` with subfolders for `characters` and `backgrounds`. After this is done R\*n'Py will be able to find our textures when we reference them in our script in `script.rpy`. The `script.rpy` file comes with some contents already but for our purposes these should be erased at the start.
 
 ## R\*n'py Scripting
 
