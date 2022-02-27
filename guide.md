@@ -1,6 +1,6 @@
 # R\*n'py guide for getting started
 
-Abstract: In this guide I will present to you a use case for R\*n'py where you start off with a dialogue script in the format that one might write one if asked on the street to write some dialogue and end up with a short VN implemented in R\*n'py. You can follow along by downloading the assets for this guide here LINK and pasting (with overwrite) the contents of the zip into a new project folder created from the R\*n'Py client. Following along will hopefully demonstrate to you how to write simple linear scenes in R\*n'py as well as non-linear, branching narratives. These are skills you can easily expand upon to create complex and impressive narratives!
+Abstract: In this guide I will present to you a use case for R\*n'py where you start off with a dialogue script in the format that one might write one if asked on the street to write some dialogue and end up with a short VN implemented in R\*n'py. You can follow along by downloading the assets for this guide here LINK and pasting (with overwrite) the contents of the zip into a new project folder created from the R\*n'Py client. Following along will hopefully demonstrate to you how to write simple linear scenes in R\*n'py as well as non-linear, branching narratives[^1]. These are skills you can easily expand upon to create complex and impressive narratives!
 
 ## Starting point
 
@@ -304,3 +304,6 @@ Run this with R\*n'Py to see if it works and feel free to experiment with using 
 ---
 
 Hopefully you were able to follow along and create something that looks like the script at the beginning in R\*n'Py! For further reading consult the official documentation ([https://www.renpy.org/doc/html/index.html](https://www.renpy.org/doc/html/index.html)) which takes some hours to read through but presents a whole world of possibilites we didn't get into in this guide. The possibilities involve introducing player choice and branching narratives as well as nicer visual effects. I would suggest at least looking at scene transitions which we did not cover in this guide, since they add quite a lot of nice liveliness to the visuals ([https://www.renpy.org/doc/html/quickstart.html#transitions](https://www.renpy.org/doc/html/quickstart.html#transitions)). R\*n'Py's visuals are also pretty customizable though it's a little bit complicated. Thank you for reading!!!
+
+
+[^1]: If you want to make trully branching narratives with say, branching dialogue trees: R\*n'Py isn't necessarily the right tool for it. Though it *can* be done it may be very cumbersome. I would suggest looking at [Twine](https://twinery.org/) for that purpose.
